@@ -1,0 +1,405 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(94, 76, 64);
+}
+
+header, .search-block, .odigo, .odigoContainer, .item, .NextTrip, .browsing, .other {
+    display: flex;
+}
+
+.item {
+    flex-direction: column;
+    align-items: left;
+    width: 300px;
+    margin: 20px;
+}
+
+.main-block {
+    color: #fff;
+    height: 120vh;
+    background: url(images/Image.png) no-repeat center/cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    justify-content: space-between;
+    padding-top: 62px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;  
+    gap: 82px;
+}
+
+.search-block {
+    align-items: center;
+    gap: 60px;
+}
+
+.info-block {
+    max-width: 630px;
+    margin-top: 160px;
+}
+
+.input-field {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #CCC;
+}
+
+.info-block h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.info-block p {
+    margin-bottom: 35px;
+    line-height: 24px;
+}
+
+.btn {
+    background-color: #565f74;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-large {
+    padding: 16px 24px;
+}
+
+.odigo {
+    width: 100%;
+    max-width: 1260px;
+    margin: -300px auto 0;
+    background-color: rgb(105, 85, 66);
+    box-shadow: black 0 0 30px 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.header {
+    color: white;
+    font-variant: small-caps;
+    font-size: 35px;
+    margin-bottom: 65px;
+    text-align: left;
+    width: 100%;
+    height: 10px;
+}
+
+.odigoContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.shrine, .shop, .tour,
+.fuji, .kyoto, .tokyo, .niigata, .sapporo {
+    background-size: cover;
+    background-position: center;
+}
+
+.shrine {
+    background-image: url(images/shrine.png);
+}
+
+.shop {
+    background-image: url(images/shop.png);
+}
+
+.tour {
+    background-image: url(images/tour.jpg);
+}
+
+.shrine, .shop, .tour {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.facts {
+    margin-top: 25px;
+    text-align: left;
+    font: 18px sans-serif, Arial;
+    color: white;
+    text-shadow: 1px 4px 6px black;
+}
+
+.title, .footer {
+    font: 20px Monaco, monospace;
+    color: white;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.footer {
+    height: 40px;
+    margin-top: 80px;
+}
+
+.NextTrip {
+    width: 100%;
+    max-width: 1264px;
+    margin: 100px auto 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.line {
+    border-bottom: 3px solid white;
+    width: 30%;
+    margin: -20px auto -50px 0;
+    margin-right: 830px;
+}
+
+.viewing {
+    margin: 5px auto 0 1000px;
+    font: bold 20px sans-serif, Arial;
+    color: white;
+}
+
+.fuji {
+    background-image: url(/Users/admin/Desktop/hw/website/images/fuji.jpg);
+}
+
+.kyoto {
+    background-image: url(/Users/admin/Desktop/hw/website/images/kyoto.jpg);
+}
+
+.tokyo {
+    background-image: url(/Users/admin/Desktop/hw/website/images/tokyo.jpg);
+}
+
+.niigata {
+    background-image: url(/Users/admin/Desktop/hw/website/images/niigata.jpg);
+}
+
+.sapporo {
+    background-image: url(/Users/admin/Desktop/hw/website/images/sapporo.jpg);
+}
+
+.browsing {
+    width: 100%;
+    max-width: 1264px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fuji, .kyoto {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 625px;
+    height: 340px;
+}
+
+.tokyo, .niigata, .sapporo {
+    flex-direction: column;
+    width: 415px;
+    height: 270px;
+}
+
+.places1 p {
+    font: bold 50px sans-serif, Arial;
+    color: white;
+    margin: 270px 0 0 20px;
+    text-shadow: 1px 4px 6px black;
+}
+
+.places2 p {
+    font: bold 50px sans-serif, Arial;
+    color: white;
+    margin: 200px 0 0 20px;
+    text-shadow: 1px 4px 6px black;
+}
+
+.osaka {
+    display: flex;
+    width: 100%;
+    max-width: 1225px;
+    height: 380px;
+    flex-direction: row;
+    padding: 50px 30px 30px 90px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+
+.title2 {
+    font: bold 25px sans-serif, Arial;
+    color: white;
+    text-align: start;
+    margin: 0px auto 20px 0px;
+    text-shadow: 1px 4px 6px black;
+}
+
+.footer2 {
+    font: bold 20px sans-serif, Arial;
+    color: white;
+    text-align: start;
+    margin: 20px auto 0px 0px;
+    height: 40px;
+    text-shadow: 1px 4px 6px black;
+}
+
+.info1, .info2 {
+    font: 16px sans-serif, Arial;
+    color: white;
+    text-shadow: 1px 4px 6px black;
+    display: flex;
+    flex-direction: row;
+}
+
+.kumano {
+    display: flex;
+    width: 100%;
+    max-width: 1225px;
+    height: 380px;
+    flex-direction: row-reverse;
+    padding: 60px 0 27px 0px
+}
+
+.pic {
+    display: column;
+    flex-direction: column;
+    width: 600px;
+    height: 300px;
+    border-radius: 7px;
+}
+
+.explore {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background: #d3c2ae;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 7px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.area {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.description {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.btn2 {
+    background: rgb(105, 85, 66);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+video {
+    width: 1440px;
+    height: 620px;
+    object-fit: cover;
+}
+
+.footer3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 370px;
+    background-color: rgb(105, 85, 66);
+    padding: 100px;
+}
+
+.footer3 .logo {
+    color: white;
+    font: bold 50px sans-serif, Arial;
+    color: white;
+    text-shadow: 1px 4px 6px black;
+}
+
+.title3 {
+    font: bold 30px sans-serif, Arial;
+    color: white;
+    text-shadow: 1px 4px 6px black;
+}
+
+.footer3 .external {
+    margin: 0 30px;
+}
+
+.links {
+    list-style: none;
+    padding: 3px;
+    font: bold 20px sans-serif, Arial;
+    color: white;
+    text-shadow: 1px 4px 6px black;
+    margin-top: 20px;
+}
+
+.footer3 .links {
+    list-style: none;
+    padding: 3px;
+    font: bold 20px sans-serif, Arial;
+    color: white;
+    text-shadow: 1px 4px 6px black;
+    margin-top: 20px;
+}
